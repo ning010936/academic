@@ -86,18 +86,21 @@
             height: 100%;
             
             /* 这里填你上传到 GitHub 的图片文件名 */
-            background-image: url('b_img.png'); 
+            background-image: url('b_img.jpg'); 
             
             background-repeat: no-repeat;
             background-position: bottom right; /* 图片靠右下角 */
-            background-size: 60%; /* 调整这个百分比来控制图片大小 */
+            /* --- 关键修改：让图片靠右并稍微往右边“挤”一点 --- */
+            background-position: right -15% bottom 0%; 
             
-            /* 控制透明度：0.1 是非常淡的效果，不影响阅读 */
-            opacity: 0.12; 
-            
-            z-index: -1; /* 确保图片在文字下方 */
-            pointer-events: none; /* 确保鼠标点不到图片，不影响点击链接 */
+            /* --- 调整大小：改小一点，让它看起来像侧边的点缀 --- */
+            background-size: 60%; 
+
+            opacity: 0.25; 
+            z-index: -1; 
+            pointer-events: none; 
         }
+        
 
         /* 控制 News 下方不空行 */
         .news-label {
@@ -139,11 +142,11 @@
             <p class="news-content">I am moving back to Asia soon to start a new position.</p>
 
             <p class="news-label">Old News:</p>
-            <p class="news-content">I completed my PhD in Education & Human-Computer Interaction (HCI) at Trinity College Dublin (School of Computer Science & Statistics, School of Education), Ireland.</p>
+            <p class="news-content">  My Ph.D. researched Education & Human-Computer Interaction (HCI) at Trinity College Dublin (School of Computer Science & Statistics, School of Education), Ireland.</p>
             
-            <p>I worked as a research fellow (postdoc) at the NHS and the School of Medicine, School of Management at the University of St Andrews, UK. I was also a guest researcher at the Institute of Psychology, University of Copenhagen, Denmark.</p>
+            <p>I worked as a research fellow (postdoc) at NHS and the School of Medicine, School of Management at the University of St Andrews, UK. I was also a guest researcher at the Institute of Psychology, University of Copenhagen, Denmark.</p>
             
-            <p>From above information, you may understand that my research and teaching expertise lies at the intersection of Psychology, Computer Science, and Education.</p>
+            <p>From above information, you may understand that my research and teaching expertise lie at the intersection of Psychology, Computer Science, and Education.</p>
             
             <p>Contact: <a href="mailto:xwang8@tcd.ie" style="color: #000; text-decoration: underline;">xwang8@tcd.ie</a></p>
         </div>
