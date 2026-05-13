@@ -115,6 +115,18 @@
 
         p { margin-bottom: 15px; }
 
+        /* 研究方向标题：加粗并消除下方间距 */
+.interest-label {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* 研究方向列表：斜体并消除所有间距 */
+.interest-item {
+    font-style: italic;
+    margin: 0;
+}
+
         @media (max-width: 768px) { 
             .profile-container { flex-direction: column; align-items: center; } 
             .profile-pic { width: 100%; max-width: 280px; } 
@@ -150,11 +162,11 @@
             
             <p>Contact: <a href="mailto:xwang8@tcd.ie" style="color: #000; text-decoration: underline;">xwang8@tcd.ie</a></p>
 
-            <p class="news-label">Research Interests:</p>
-            <p>Human-computer interaction</p>
-            <p>Technology in Medical Training<p>
-            <p>Immersive Learning<p>
-            <p>Technology-enhanced education and training in various fields</p>
+            <p class="interest-label">Research Interests:</p>
+            <p class="interest-item">Human-computer interaction</p>
+            <p class="interest-item">Technology in Medical Training</p>
+            <p class="interest-item">Immersive Learning</p>
+            <p class="interest-item">Technology-enhanced education and training in various fields</p>
         </div>
     </div>
 </body>
